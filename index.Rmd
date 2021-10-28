@@ -1,25 +1,20 @@
 ---
-title: "My awesome website"
+title: "Welcome"
 output: 
   html_document
 ---
 
-# This is Rachel's awesome website
-
 ![](images/pikachu.gif)
 
-I can link to useful things like 
-[google](https://www.google.com/) and [P8105](https://www.p8105.com./index.html)
+## About the website
+
+This is the website displaying my experience and skills on data science.
+
+
+## About Me
+
+This is Ruiqi Yan. I am a first-year MS biostatistics student of Mailman School of Public Health in Columbia University. I was from Nanning, Guangxi, the south part of China and have been United States for 9 years. I really love watching movies, and traveling. My favorite sport is swimming. I would like to be pronounced by she, her, her.\
 
 
 
-I can make an extra page on my site and link to that.、
-Here's my [about](about.html) page.
 
-
-
-## Here's Ted
-
-<img src="images/image.jpg" style="width:75%">
-
-![](images/)
