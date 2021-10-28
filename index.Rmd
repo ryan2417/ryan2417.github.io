@@ -1,0 +1,25 @@
+---
+title: "My awesome website"
+output: 
+  html_document
+---
+
+# This is Rachel's awesome website
+
+![](images/pikachu.gif)
+
+I can link to useful things like 
+[google](https://www.google.com/) and [P8105](https://www.p8105.com./index.html)
+
+
+
+I can make an extra page on my site and link to that.、
+Here's my [about](about.html) page.
+
+
+
+## Here's Ted
+
+<img src="images/image.jpg" style="width:75%">
+
+![](images/)
