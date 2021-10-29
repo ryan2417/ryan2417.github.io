@@ -11,10 +11,6 @@ output:
 This is the website displaying my experience and skills on data science.
 
 
-## About Me
+### About Me
 
 This is Ruiqi Yan. I am a first-year MS biostatistics student of Mailman School of Public Health in Columbia University. I was from Nanning, Guangxi, the south part of China and have been United States for 9 years. I really love watching movies, and traveling. My favorite sport is swimming. I would like to be pronounced by she, her, her.\
-
-
-
-

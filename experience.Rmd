@@ -1,4 +1,5 @@
 ---
+title: Academic and Professional Experience
 output: 
   html_document 
 ---
@@ -6,6 +7,54 @@ output:
 
 ## Education
 
+### Master of Science
+**School** - *Columbia University Mailman School of Public Health*\
+**Department** - *Biostatistics(Theory and Method)*\
+**Location** - *New York, NY*\
+**Graduation Year** - *2023*\
+
+### Bachelor of Science
+**School** - *University of Washington Seattle*\
+**Department** - *Statistics*\
+**Location** - *Seattle, WA*\
+**Graduation Year** - *2019*\
+
+## Job Experience 
+***May 2020 – July 2021***\
+**Company** - *Orca Insurance Agency Corporation*\
+**Title** - *Insurance Broker*\
+**Location** - *Seattle, WA*\
+**Description**\
+
+* Obtained all customer demographics in order to provide appropriate insurance rates and provide appropriate coverage
+* Used online tools real estate and property websites to obtain all logistical information regarding customer properties 
+* Chose optimal plans for coverage for client and reviewed multiple rates from several carriers 
+* Utilized YouTube, and direct marketing to advertise business service and build client 
+* Also provided policy change and claim report services\
 
 
+***August 2018***\
+**Company** - *China Mobile Ltd*\
+**Title** - *Internship*\
+**Location** - *Nanning, China*\
+**Description**\
+
+*	Traced, reviewed, and recorded the daily flow of board band equipment stock, audited request of equipment and followed up with construction team to return property
+* Classify files of hundreds of construction projects, including: contracts, reports and certificates; archived files by digitizing and entered e-files into online system.  
+*	Utilized excel to organize data of thousands of construction projects; merged and organized several different excel sheets into one clean spreadsheet and checked project progress
+*	Assisted financial data transformation by moving monthly financial data into new system\
+
+## Academic Projects
+
+### The Association Between Marital Status and Demographic Characteristic	
+*Spring 2018*\
+This project was a cross-sectional study that analyzed data obtained from UCI Machine Learning to find the association between marital status and demographic characteristics. Cleaned data and determine the demographic variables of interest. Summarized data and describe the characteristics of each variable of interest. Test the correlation between marital status versus age, education, income, and gender. Interpreted the result and made some conclusions about the rationality of the result. Discussed limitations and the possibility of project expansion.
+
+### Brain Analysis Final Project STAT 498	
+*Spring 2018*\
+This project was initiated from a companion paper that used the Bayesian method to explore a brain misunderstanding. Designed a comparable questionnaire and collected responses from students at the University of Washington. Entered, cleaned and analyzed new data set by methods from companion paper. Generated a report that compares results in the companion paper and results of the new data set. Discussed validity of the previous methods and the availability of new methods. Used data visualization to demonstrate conclusions in class.\
+
+### Causal Inference of Bike-Sharing Usage
+*Spring 2019*\
+This project was a retrospective study that used two data sets, bike-sharing and weather in Seattle, to infer a multivariate regression model that shows the causal effects of weather on the frequency and time length of bike-sharing usage. Cleaned and merged two data sets and removed weather variables that correlated with another variable. Constructed a multivariate Poisson regression model and a non-parametric model. Generated the paper and post to present the final models and compare the performance of the two models.
 
