@@ -1,0 +1,147 @@
+---
+title: "NY NOAA DASHBOARD"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source_code: embed
+    theme: 
+      bootstrap: flatly
+          
+    navbar: 
+      - { title: "Home", href: index.html }
+      - { title: "Experience", href: experience.html }
+      - { icon: "fa-envelope", href: mailto:<ry2417.cumc.columbia.edu> }
+      - { icon: "fa-github", href: http://github.com/ryan2417/ }
+      - {icon: "fa-linkedin", href: www.linkedin.com/in/ruiqi-yan4ab4172 }
+---
+
+
+
+```{r include = FALSE}
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+library(flexdashboard)
+```
+
+
+
+
+
+```{r}
+data("ny_noaa")
+ny_noaa_df <-
+  ny_noaa %>% 
+  drop_na() %>% 
+  filter(
+    id == "USW00094728",
+    date >= "2000-01-01"
+  ) %>% 
+  drop_na() %>% 
+  mutate(tmin = as.numeric(tmin)/10,
+         tmax = as.numeric(tmax)/10,
+         prcp = prcp/10
+         ) %>% 
+  select(-id)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Temperature Change and Month
+
+```{r}
+ny_noaa_df %>%
+  mutate(temp_change = tmax - lag(tmax),
+         month = as.numeric(format(date, format = "%m")),
+         month = factor(month.name[month], month.name[1:12])) %>% 
+  filter(prcp > 0) %>% 
+  plot_ly(
+    y = ~temp_change,
+    x = ~month,
+    colors = "viridis",
+    color = ~month,
+    type = "box"
+  ) %>% 
+  layout(
+    title = "Daily Temperature Change Boxplot",
+    xaxis = list(title = "month"),
+    yaxis = list(title = "temprature change(C)")
+  )
+  
+```
+
+### Percipitation Over Time
+
+```{r}
+ny_noaa_df %>%
+  mutate(month_date = format(date, format = "%m/%d"),
+         year = format(date, format = "%Y")) %>%
+  plot_ly(
+    y = ~prcp,
+    x = ~month_date,
+    color = ~year,
+    colors = "viridis",
+    type = "scatter",
+    mode = "lines"
+  ) %>% 
+  layout(
+    title = "Percipitation Lineplot",
+    xaxis = list(title = "date"),
+    yaxis = list(title = "percipitation(mm)")
+  )
+```
+
+
+Column {.tabset data-width=450}
+-----------------------------------------------------------------------
+### Snow Day
+
+```{r}
+ny_noaa_df %>%
+  mutate(month_year = format(date, format = "%Y/%m"),
+         month = as.numeric(format(date, format = "%m")),
+         month = factor(month.name[month], month.name[1:12])) %>% 
+  filter(snow > 0) %>% 
+  group_by(month, month_year) %>% 
+  summarise(num_snow = n()) %>% 
+  filter(num_snow > 0) %>% 
+  plot_ly(
+    x = ~num_snow,
+    y = ~month_year,
+    color = ~month,
+    colors = "viridis",
+    type = "bar"
+  ) %>% 
+  layout(
+    title = "Count of Snow Day Each Month",
+    yaxis = list(title = "month with snow"),
+    xaxis = list(title = "count of snow day")
+  )
+```
+### Rainy Day
+
+```{r}
+ny_noaa_df %>%
+  mutate(month_year = format(date, format = "%Y/%m"),
+         month = as.numeric(format(date, format = "%m")),
+         month = factor(month.name[month], month.name[1:12])) %>% 
+  filter(prcp > 0) %>% 
+  group_by(month, month_year) %>% 
+  summarise(num_prcp = n()) %>% 
+  filter(num_prcp > 0) %>% 
+  plot_ly(
+    x = ~num_prcp,
+    y = ~month_year,
+    color = ~month,
+    colors = "viridis",
+    type = "bar"
+  ) %>% 
+  layout(
+    title = "Count of Rainy Day Each Month",
+    yaxis = list(title = "month with rain"),
+    xaxis = list(title = "count of rainy day")
+  )
+```
+
