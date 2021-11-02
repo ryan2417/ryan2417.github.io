@@ -23,6 +23,7 @@ library(p8105.datasets)
 library(tidyverse)
 library(plotly)
 library(flexdashboard)
+
 ```
 
 
@@ -55,14 +56,15 @@ Column {data-width=650}
 ny_noaa_df %>%
   mutate(temp_change = tmax - lag(tmax),
          month = as.numeric(format(date, format = "%m")),
-         month = factor(month.name[month], month.name[1:12])) %>% 
+         month = fct_relevel(month.name[month], month.name[1:12])) %>% 
   filter(prcp > 0) %>% 
   plot_ly(
     y = ~temp_change,
     x = ~month,
     colors = "viridis",
     color = ~month,
-    type = "box"
+    type = "box",
+    alpha = 0.3
   ) %>% 
   layout(
     title = "Daily Temperature Change Boxplot",
@@ -84,7 +86,8 @@ ny_noaa_df %>%
     color = ~year,
     colors = "viridis",
     type = "scatter",
-    mode = "lines"
+    mode = "lines",
+    alpha = 0.3
   ) %>% 
   layout(
     title = "Percipitation Lineplot",
@@ -100,19 +103,21 @@ Column {.tabset data-width=450}
 
 ```{r}
 ny_noaa_df %>%
-  mutate(month_year = format(date, format = "%Y/%m"),
-         month = as.numeric(format(date, format = "%m")),
-         month = factor(month.name[month], month.name[1:12])) %>% 
+  mutate(month_year = format(date, format = "%Y/%m")) %>% 
   filter(snow > 0) %>% 
-  group_by(month, month_year) %>% 
+  group_by(month_year) %>% 
   summarise(num_snow = n()) %>% 
   filter(num_snow > 0) %>% 
+  mutate(month = as.numeric(str_sub(month_year, 6)),
+         month = fct_relevel(month.name[month], month.name[1:12]),
+         month_year = fct_reorder(month_year, num_snow)) %>% 
   plot_ly(
     x = ~num_snow,
     y = ~month_year,
     color = ~month,
     colors = "viridis",
-    type = "bar"
+    type = "bar",
+    alpha = 0.5
   ) %>% 
   layout(
     title = "Count of Snow Day Each Month",
@@ -124,19 +129,21 @@ ny_noaa_df %>%
 
 ```{r}
 ny_noaa_df %>%
-  mutate(month_year = format(date, format = "%Y/%m"),
-         month = as.numeric(format(date, format = "%m")),
-         month = factor(month.name[month], month.name[1:12])) %>% 
+  mutate(month_year = format(date, format = "%Y/%m")) %>% 
   filter(prcp > 0) %>% 
-  group_by(month, month_year) %>% 
+  group_by(month_year) %>% 
   summarise(num_prcp = n()) %>% 
   filter(num_prcp > 0) %>% 
+  mutate(month = as.numeric(str_sub(month_year, 6)),
+         month = fct_relevel(month.name[month], month.name[1:12]),
+         month_year = fct_reorder(month_year, num_prcp)) %>% 
   plot_ly(
     x = ~num_prcp,
     y = ~month_year,
     color = ~month,
     colors = "viridis",
-    type = "bar"
+    type = "bar",
+    alpha = 0.5
   ) %>% 
   layout(
     title = "Count of Rainy Day Each Month",
