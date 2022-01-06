@@ -1,0 +1,33 @@
+---
+title: "Acedemic Project"
+author: "Ruiqi Yan (ry2417)"
+date: "1/5/2022"
+output: html_document
+---
+
+# Academic Projects
+
+## Exploratory Analysis About Drug Use Among Youth                		
+*Fall 2021*\
+This project used the data collected by surveys of Youth Risk Behavior Surveillance System to explore the association between drug use and risky behaviors among high school students. Applied data visualization and interactive plots to demonstrate the overall drug use among youth over each state, gender and races. Constructed functions in R to test the correlation between drug use status and risky behavior of interested through hypothesis testing and estimate the magnitude of the association. Built a website called [Risky Drug](https://meanstudent.github.io/DS_FinalProject.io/) to show analysis and results of the project.
+
+## Model Fitting for Crime Rate and Demographic Characteristics Variables
+*Fall 2021*\
+This goal of this project was building a multivariate regression model to predict the crime rate of a county though demographic variables. Drew pair-wise plots to select variables and interaction terms. Applied automatic procedures with various criteria to get several candidate models and used cross-validation to find the model with lowest prediction error as the final model. Checked the violation of assumptions using normality and multicollinearity analysis. Generated a paper about this project.
+
+## Causal Inference of Bike-Sharing Usage
+*Spring 2019*\
+This project was a retrospective study that used two data sets, bike-sharing and weather in Seattle, to infer a multivariate regression model that shows the causal effects of weather on the frequency and time length of bike-sharing usage. Cleaned and merged two data sets and removed weather variables that correlated with another variable. Constructed a multivariate Poisson regression model and a non-parametric model. Generated the paper and post to present the final models and compare the performance of the two models.
+
+## [RecipEZ](https://chunmochen.shinyapps.io/Info201-Final_Project/)
+*Spring 2019*\
+Designed and constructed a website that users can search for the recipes that fit their nutrition and budget limitation through Shiny. The nutrition and recipe data were absorbed from other website by API. Given all the option of nutrition for users to narrow down their choice of recipes.
+
+## The Association Between Marital Status and Demographic Characteristic	
+*Spring 2018*\
+This project was a cross-sectional study that analyzed data obtained from UCI Machine Learning to find the association between marital status and demographic characteristics. Cleaned data and determine the demographic variables of interest. Summarized data and describe the characteristics of each variable of interest. Test the correlation between marital status versus age, education, income, and gender. Interpreted the result and made some conclusions about the rationality of the result. Discussed limitations and the possibility of project expansion.
+
+## Brain Analysis Final Project STAT 498	
+*Spring 2018*\
+This project was initiated from a companion paper that used the Bayesian method to explore a brain misunderstanding. Designed a comparable questionnaire and collected responses from students at the University of Washington. Entered, cleaned and analyzed new data set by methods from companion paper. Generated a report that compares results in the companion paper and results of the new data set. Discussed validity of the previous methods and the availability of new methods. Used data visualization to demonstrate conclusions in class.\
+

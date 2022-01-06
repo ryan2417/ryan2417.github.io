@@ -13,4 +13,8 @@ This is the website displaying my experience and skills on data science.
 
 ### About Me
 
-This is Ruiqi Yan. I am a first-year MS biostatistics student of Mailman School of Public Health in Columbia University. I was from Nanning, Guangxi, the south part of China and have been United States for 9 years. I really love watching movies, and traveling. My favorite sport is swimming. I would like to be pronounced by she, her, her.\
+This is Ruiqi Yan. I am a first-year MS Biostatistics student of Mailman School of Public Health in Columbia University. I was from Nanning, Guangxi, the south part of China and have been United States for 9 years. My native language is Chinese and I knew a little Korean. I really love watching movies, and traveling. My favorite sport is swimming. I would like to be pronounced by she, her, her.\
+
+### Career Goal
+
+My career goal is becoming a professional data analytics in clinical trial organization or research lab. Raw data contain tons of information but it is not informative. I really enjoy using data analysis tools to dig out the information hiding in data. The clinical trial and research lab often work on cutting-edge technologies which make people's life better and let me learn more about the world. 

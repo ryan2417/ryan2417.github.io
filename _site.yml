@@ -5,14 +5,16 @@ navbar:
   right:
     - text: "Experience"
       href: experience.html
+    - text: "Academic Project"
+      href: academic_project.html
     - text: "NY NOAA Dashboard"
       href: noaa.html
-    - icon: fa-envelope fa-lg
-      href: mailto:<ry2417.cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: http://github.com/ryan2417/
     - icon: fa-linkedin fa-lg
-      href: www.linkedin.com/in/ruiqi-yan4ab4172
+      href: http://www.linkedin.com/in/ruiqi-yan4ab4172/
+    - icon: fa-envelope fa-lg
+      href: mailto:<ry2417.cumc.columbia.edu>
 output:
   html_document:
     theme: flatly

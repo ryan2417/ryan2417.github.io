@@ -44,17 +44,4 @@ output:
 *	Utilized excel to organize data of thousands of construction projects; merged and organized several different excel sheets into one clean spreadsheet and checked project progress
 *	Assisted financial data transformation by moving monthly financial data into new system\
 
-## Academic Projects
-
-### The Association Between Marital Status and Demographic Characteristic	
-*Spring 2018*\
-This project was a cross-sectional study that analyzed data obtained from UCI Machine Learning to find the association between marital status and demographic characteristics. Cleaned data and determine the demographic variables of interest. Summarized data and describe the characteristics of each variable of interest. Test the correlation between marital status versus age, education, income, and gender. Interpreted the result and made some conclusions about the rationality of the result. Discussed limitations and the possibility of project expansion.
-
-### Brain Analysis Final Project STAT 498	
-*Spring 2018*\
-This project was initiated from a companion paper that used the Bayesian method to explore a brain misunderstanding. Designed a comparable questionnaire and collected responses from students at the University of Washington. Entered, cleaned and analyzed new data set by methods from companion paper. Generated a report that compares results in the companion paper and results of the new data set. Discussed validity of the previous methods and the availability of new methods. Used data visualization to demonstrate conclusions in class.\
-
-### Causal Inference of Bike-Sharing Usage
-*Spring 2019*\
-This project was a retrospective study that used two data sets, bike-sharing and weather in Seattle, to infer a multivariate regression model that shows the causal effects of weather on the frequency and time length of bike-sharing usage. Cleaned and merged two data sets and removed weather variables that correlated with another variable. Constructed a multivariate Poisson regression model and a non-parametric model. Generated the paper and post to present the final models and compare the performance of the two models.
 
