@@ -26,11 +26,10 @@ output:
 **Location** - *Seattle, WA*\
 **Description**\
 
-* Obtained all customer demographics in order to provide appropriate insurance rates and provide appropriate coverage
-* Used online tools real estate and property websites to obtain all logistical information regarding customer properties 
-* Chose optimal plans for coverage for client and reviewed multiple rates from several carriers 
-* Utilized YouTube, and direct marketing to advertise business service and build client 
-* Also provided policy change and claim report services\
+* Obtained customers’ demographics in order to provide appropriate insurance rates and products
+* Used online tools real estate and property websites to obtain logistical information regarding customer properties and analyze that information to figure out customers’ needs
+* Selected optimal plan among multiple rates from several carriers and demonstrated to customers the pros and cons of the plan
+* Utilized YouTube, and direct marketing to advertise business service and build client\
 
 
 ***August 2018***\
@@ -39,9 +38,9 @@ output:
 **Location** - *Nanning, China*\
 **Description**\
 
-*	Traced, reviewed, and recorded the daily flow of board band equipment stock, audited request of equipment and followed up with construction team to return property
-* Classify files of hundreds of construction projects, including: contracts, reports and certificates; archived files by digitizing and entered e-files into online system.  
-*	Utilized excel to organize data of thousands of construction projects; merged and organized several different excel sheets into one clean spreadsheet and checked project progress
+*	Traced, reviewed, and recorded the daily flow of board band equipment stock including audited the request of equipment out stock and followed up with construction team about the return of the property
+* Classify and archive files of hundreds of construction projects, including contracts, reports and certificates; archived files by digitizing and entered e-files into online system
+*	Utilized Excel to manage data of thousands of construction projects; merged and organized several different data sets into one and checked project progress
 *	Assisted financial data transformation by moving monthly financial data into new system\
 
 
